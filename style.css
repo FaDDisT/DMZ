@@ -1,0 +1,240 @@
+body {
+	color:#222222;
+	font-size: 16px;
+	width:100%;
+    margin:0px;
+    padding-top:60px;
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+	
+a {
+	text-decoration: none;
+	color:#f6b32b;
+	}
+	
+a:hover {
+	text-decoration:underline;
+	}
+	
+img {
+	border-style: none;
+	}
+	
+.header {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:60px;
+	background-color:#ffffff;
+	z-index:9;
+	border-bottom:solid 1px #b5b5b5;
+}
+
+.menu {
+	width:900px;
+	margin:auto;
+	text-align:right;
+	}
+	
+.content {
+	width:900px;
+	margin:auto;
+	text-align:left;
+}
+	
+.menu a {
+	padding-left:10px;
+	padding-right:10px;
+	min-width:60px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	display:inline-block;
+	color:#222222;
+	font-size:16px;
+	text-transform: uppercase;
+	}
+
+.menu a:hover {
+	text-decoration: underline;
+}
+
+.menu a:first-child {
+	float:left;
+	padding-left:0px;
+}
+
+.menu a:last-child {
+	margin:10px;
+	height:40px;
+	line-height:40px;
+	color:#ffffff;
+	border-radius:4px;
+	border-bottom:solid 1px #870f0f;
+	background: #f33535;
+}
+
+.menu a:last-child:hover {
+	text-decoration: none;
+}
+
+.menu a img {
+	height:60px;	
+}
+
+#active {background-color:#f6b32b;border-bottom:1px solid #956c18;color:#ffffff;}
+#studio {background-color:#bdd475;border-bottom:1px solid #606b3c;color:#ffffff;}
+#mastering {background-color:#a04582;border-bottom:1px solid #502241;color:#ffffff;}
+
+.big {
+	width:100%;
+	display:block;
+	margin-bottom:10px;
+}
+
+.banner {
+	width:100%;
+	height:540px;
+	overflow:hidden;
+	background: url('images/studio.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+}
+
+.banner img {
+	margin-top:120px;
+	height:300px;
+}
+
+#masteringbanner {
+	background: url('images/mastering.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+}
+
+
+#livebanner {
+	background: url('images/live.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+}
+	
+p, .contact {
+	margin:0px;
+	padding:0px;
+	margin-bottom:20px;
+	font-size:16px;
+	}
+	
+h1 {
+	margin:0px;
+	padding-top:20px;
+	margin-bottom:20px;
+	font-size:24px;
+	font-weight:normal;
+	display:inline-block;
+	text-align:left;
+	text-transform:uppercase;
+}
+
+.footer {
+	width:900px;
+	margin:auto;
+	text-align:center;
+	height:60px;
+	line-height:60px;
+	margin-top:40px;
+	margin-bottom:40px;
+	border-top:solid 1px #b5b5b5;
+	font-size:14px;
+}
+
+.logos {
+	float:right;
+}
+
+.logos a {
+	color:#b5b5b5;
+	margin-left:10px;
+}
+
+.copyright {
+	color:#b5b5b5;
+	float:left;
+}
+
+iframe {
+	border-radius:4px;
+	width:100%;
+	height:300px;
+}
+
+.bigimage, .leftimage, .rightimage {
+	margin-bottom:10px;
+	display:block;
+}
+
+.bigimage {
+	width:100%;
+}
+
+.leftimage {
+	width:445px;
+	float:left;
+	margin-right:10px;
+}
+
+.rightimage {
+	width:445px;
+	float:left;
+}
+
+.tweet {
+	width:100%;
+	margin-bottom:20px;
+}
+
+.spanlogo {
+	display:inline-block;
+	height:20px;
+	margin-left:20px;
+}
+	
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	h1 {font-weight:bold;}
+	.leftcolumn, .rightcolumn {margin:0px;float:none;width:300px;}
+	.menu {width:100%;}
+	.content, .footer {width:300px;}
+	iframe {margin-bottom:20px;}
+	.menu a {display:none;width:100%;}
+	.menu a:first-child {display:block;}
+	.banner {height:300px;}
+	.banner img {margin-top:100px;height:100px;}
+	.leftimage, .rightimage {width:300px;float:none;margin-right:0px;}
+	.copyright {display:none;}
+	.logos {float:none;}
+	.logos a {font-size:14px;}
+	.logos a:first-child {margin:0px;}
+	.footer {margin-top:20px;margin-bottom:0px;height:100px;line-height:100px;}
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+	.menu, .content, .footer {width:728px;}
+	.leftimage, .rightimage {width:359px;}
+	.banner img {margin-top:200px;height:200px;}
+}
